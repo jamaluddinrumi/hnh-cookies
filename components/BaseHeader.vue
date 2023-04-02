@@ -10,25 +10,11 @@ const appConfig = useAppConfig();
 
 <template>
   <header class="navbar bg-base-100 container mx-auto px-4">
-    <div class="flex-1">
-      <NuxtLink href="/">
-        <span class="text-secondary text-xl normal-case calistoga">
-          HNH COOKIES
-        </span>
-      </NuxtLink>
-    </div>
-    <div class="flex-none hidden lg:block">
-      <a
-        :href="appConfig.waUrl"
-        target="_blank"
-        class="btn btn-primary gap-1 btn-circle lg:btn-block hover:text-base-content lg:px-4"
-      >
-        <Icon name="logos:whatsapp-icon" class="h-6 w-6 lg:w-4 lg:h-4" />
-        <span class="hidden lg:inline font-bold inter-var">
-          {{ appConfig.waNo }}
-        </span>
-      </a>
-    </div>
+    <NuxtLink href="/" class="mx-auto">
+      <span class="text-secondary text-xl normal-case calistoga">
+        HNH COOKIES
+      </span>
+    </NuxtLink>
   </header>
 </template>
 
