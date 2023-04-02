@@ -13,6 +13,7 @@ import "@fontsource/inter/variable.css";
     </main>
     <BaseFooter />
   </div>
+  <FloatingWhatsapp />
 </template>
 
 <style>
