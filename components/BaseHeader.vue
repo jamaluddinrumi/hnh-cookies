@@ -7,7 +7,7 @@ const props = defineProps<{
 </script>
 
 <template>
-  <div class="navbar bg-base-100">
+  <header class="navbar bg-base-100 container mx-auto px-4">
     <div class="flex-1">
       <NuxtLink href="/">
         <span class="text-secondary text-xl normal-case calistoga">
@@ -25,7 +25,7 @@ const props = defineProps<{
         <span class="hidden lg:inline">082-111-112-119</span>
       </a>
     </div>
-  </div>
+  </header>
 </template>
 
 <style>
