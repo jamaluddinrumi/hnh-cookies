@@ -3,6 +3,9 @@ import "@fontsource/inter";
 </script>
 
 <template>
+  <Head>
+    <Link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  </Head>
   <div class="min-h-screen bg-gradient-to-b from-white/40 to-primary/40">
     <BaseHeader />
     <main>
