@@ -10,7 +10,7 @@ const props = defineProps<{
   </Head>
   <img src="/articles/hero.jpeg" alt="" />
   <div class="container mx-auto px-4">
-    <article class="prose mx-auto mt-8 mb-16">
+    <article class="prose mx-auto mt-8 mb-12 lg:mb-16 prose-h1:text-2xl">
       <h1>Maecenas sed diam eget risus varius blandit sit amet non magna.</h1>
       <p>
         Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
@@ -56,7 +56,7 @@ const props = defineProps<{
       </template>
     </Product>
     <Product :flip-order="true">
-      <template #title> Pellentesque Vestibulum </template>
+      <template #title> Fringilla Cras </template>
       <template #price>40k</template>
       <template #description>
         Cras mattis consectetur purus sit amet fermentum. Vivamus sagittis lacus
