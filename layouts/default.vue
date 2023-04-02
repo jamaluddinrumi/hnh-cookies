@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import "@fontsource/inter";
+import "@fontsource/inter/variable.css";
 </script>
 
 <template>
@@ -14,3 +14,10 @@ import "@fontsource/inter";
     <BaseFooter />
   </div>
 </template>
+
+<style>
+p,
+.inter-var {
+  font-family: "InterVariable", system-ui;
+}
+</style>

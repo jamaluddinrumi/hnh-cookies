@@ -22,13 +22,13 @@ const props = defineProps<{
         class="btn btn-primary gap-1 btn-circle lg:btn-block hover:text-base-content lg:px-4"
       >
         <Icon name="logos:whatsapp-icon" class="h-6 w-6 lg:h-4 lg:w-4" />
-        <span class="hidden lg:inline">082-111-112-119</span>
+        <span class="hidden lg:inline font-bold inter-var">082-111-112-119</span>
       </a>
     </div>
   </header>
 </template>
 
-<style>
+<style scoped>
 .calistoga {
   font-family: "Calistoga", cursive;
 }
