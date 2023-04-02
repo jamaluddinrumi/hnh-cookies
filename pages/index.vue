@@ -8,6 +8,7 @@ const props = defineProps<{
   <Head>
     <Title> HNH Cookies - Delicious Made Better </Title>
   </Head>
+  <img src="/articles/hero.jpeg" alt="" />
   <div class="container mx-auto px-4">
     <article class="prose mx-auto mt-8 mb-16">
       <h1>Maecenas sed diam eget risus varius blandit sit amet non magna.</h1>
