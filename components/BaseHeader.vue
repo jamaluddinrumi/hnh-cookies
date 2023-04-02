@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import "@fontsource/calistoga";
+
 const props = defineProps<{
   modelValue?: boolean;
 }>();
@@ -8,10 +10,9 @@ const props = defineProps<{
   <div class="navbar bg-base-100">
     <div class="flex-1">
       <a class="btn btn-ghost rounded-full">
-        <span class="text-secondary font-bold text-xl normal-case calistoga">
-          HNH
+        <span class="text-secondary text-xl normal-case calistoga">
+          HNH COOKIES
         </span>
-        <span class="text-secondary font-light text-lg normal-case ml-1">Cookies</span>
       </a>
     </div>
     <div class="flex-none">
