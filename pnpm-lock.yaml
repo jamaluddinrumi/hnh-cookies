@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@fontsource/calistoga': ^4.5.11
   '@fontsource/inter': ^4.5.15
   '@nuxtjs/tailwindcss': ^6.6.5
   '@tailwindcss/typography': ^0.5.9
@@ -9,6 +10,7 @@ specifiers:
   nuxt-icon: ^0.3.3
 
 devDependencies:
+  '@fontsource/calistoga': 4.5.11
   '@fontsource/inter': 4.5.15
   '@nuxtjs/tailwindcss': 6.6.5
   '@tailwindcss/typography': 0.5.9
@@ -565,6 +567,10 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@fontsource/calistoga/4.5.11:
+    resolution: {integrity: sha512-h8Anj+KrPQ2h26CMP/yWU+71zECjRBHoS/uqAgi82ja8UtPvLge3iH9ah7ZPOGHalgr+uxmlAPade88N+U3lVA==}
+    dev: true
 
   /@fontsource/inter/4.5.15:
     resolution: {integrity: sha512-FzleM9AxZQK2nqsTDtBiY0PMEVWvnKnuu2i09+p6DHvrHsuucoV2j0tmw+kAT3L4hvsLdAIDv6MdGehsPIdT+Q==}
