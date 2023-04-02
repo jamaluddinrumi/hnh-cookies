@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "AnaktoriaRegular";
+  src: url("~/assets/fonts/anaktoria/Anaktoria_hint.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* The following rules are deprecated. */
+
+@font-face {
+  font-family: "Anaktoria";
+  src: url("~/assets/fonts/anaktoria/Anaktoria_hint.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
