@@ -17,7 +17,6 @@
     "daisyui": "^2.50.0",
     "nuxt": "^3.3.2",
     "nuxt-icon": "^0.3.3",
-    "nuxt-purgecss": "^2.0.0",
     "sass": "^1.53.0"
   }
 }
