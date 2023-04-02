@@ -13,9 +13,12 @@ const props = defineProps<{
     <Meta property="og:image" content="/cookies-time.webp" />
     <Meta property="og:site_name" content="HNH Cookies" />
     <Meta property="og:locale" content="id_ID" />
-    <Meta property="og:description" content="Cookies Time! Choco Chips Cookies, Baton Cookies, Choctart semua ada di sini! Yuk!" />
+    <Meta
+      property="og:description"
+      content="Cookies Time! Choco Chips Cookies, Baton Cookies, Choctart semua ada di sini! Yuk!"
+    />
   </Head>
-  <img src="/articles/hero.jpeg" alt="" />
+  <img src="/cookies-time.webp" class="w-full" alt="" />
   <div class="container mx-auto px-4">
     <article class="prose mx-auto mt-8 mb-12 lg:mb-16 prose-h1:text-2xl">
       <h1>Maecenas sed diam eget risus varius blandit sit amet non magna.</h1>
