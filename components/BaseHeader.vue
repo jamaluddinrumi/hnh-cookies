@@ -9,11 +9,11 @@ const props = defineProps<{
 <template>
   <div class="navbar bg-base-100">
     <div class="flex-1">
-      <a class="btn btn-ghost rounded-full">
+      <NuxtLink href="/">
         <span class="text-secondary text-xl normal-case calistoga">
           HNH COOKIES
         </span>
-      </a>
+      </NuxtLink>
     </div>
     <div class="flex-none">
       <a
