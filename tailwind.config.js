@@ -5,6 +5,7 @@ const daisyUi = require("daisyui/src/colors/themes");
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
+    "./storyblok/**/*.{vue,js}",
     "./components/**/*.{js,vue,ts}",
     "./layouts/**/*.vue",
     "./pages/**/*.vue",
