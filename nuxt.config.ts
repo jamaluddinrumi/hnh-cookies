@@ -1,5 +1,13 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  vite: {
+    esbuild: {
+      supported: {
+        "top-level-await": true, //browsers can handle top-level-await features
+      },
+    },
+  },
+
   runtimeConfig: {
     // Private config that is only available on the server
     apiSecret: "123",
