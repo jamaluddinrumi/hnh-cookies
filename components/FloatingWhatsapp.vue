@@ -1,7 +1,23 @@
 <script setup lang="ts">
+import type { DataSource } from "~/utils/type";
+
 const props = defineProps<{
   modelValue?: boolean;
 }>();
+
+const storyblokApi = useStoryblokApi();
+
+const { data } = await storyblokApi.get("cdn/datasource_entries");
+
+const config: Array<DataSource> = data.datasource_entries;
+
+function getConfig(dataName: string) {
+  const result: DataSource | undefined = config.find(
+    (dataSource) => dataSource.name === dataName
+  );
+
+  return result?.value;
+}
 
 const waUrl = getConfig("waUrl");
 </script>
