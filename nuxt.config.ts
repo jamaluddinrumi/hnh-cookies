@@ -9,11 +9,16 @@ export default defineNuxtConfig({
   },
 
   modules: [
+    "@nuxt/image-edge",
     "@storyblok/nuxt",
     "@nuxtjs/tailwindcss",
     "nuxt-icon",
     "@nuxtjs/critters",
   ],
+
+  image: {
+    provider: "storyblok"
+  },
 
   storyblok: {
     accessToken: process.env.NUXT_STORYBLOK_TOKEN,

@@ -6,6 +6,12 @@ const props = defineProps<{
 
 <template>
   <div v-editable="blok">
-    <img :src="blok.image" alt="" srcset="" />
+    <NuxtImg
+      provider="storyblok"
+      format="webp"
+      :src="blok.image"
+      width="1280"
+      height="600"
+    />
   </div>
 </template>
