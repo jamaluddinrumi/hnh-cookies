@@ -3,20 +3,7 @@ const props = defineProps<{
   modelValue?: boolean;
 }>();
 
-const story = ref(null);
-const storyblokApi = useStoryblokApi();
-await useAsyncData(
-  "halaman-depan",
-  async () =>
-    await storyblokApi
-      .get(`cdn/stories/halaman-depan`, {
-        version: "draft",
-      })
-      .then((data) => {
-        console.log(data);
-        story.value = data.data.story;
-      })
-);
+const story = await useAsyncStoryblok("halaman-depan", { version: "draft" });
 </script>
 
 <template>
