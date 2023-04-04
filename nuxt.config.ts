@@ -34,7 +34,7 @@ export default defineNuxtConfig({
   storyblok: {
     accessToken: process.env.NUXT_STORYBLOK_TOKEN,
     apiOptions: {
-      // timeout: 180,
+      timeout: 180,
       cache: {
         clear: "auto",
         type: "memory",
