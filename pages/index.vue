@@ -5,18 +5,18 @@ const props = defineProps<{
 
 const story = ref(null);
 const storyblokApi = useStoryblokApi();
-const { data } = await useAsyncData(
-  "vue",
+await useAsyncData(
+  "halaman-depan",
   async () =>
-    await storyblokApi.get(`cdn/stories/halaman-depan`, {
-      version: "draft",
-    })
+    await storyblokApi
+      .get(`cdn/stories/halaman-depan`, {
+        version: "draft",
+      })
+      .then((data) => {
+        console.log(data);
+        story.value = data.data.story;
+      })
 );
-story.value = data.value.data.story;
-
-onMounted(() => {
-  useStoryblokBridge(story.value.id, (evStory) => (story.value = evStory));
-});
 </script>
 
 <template>
