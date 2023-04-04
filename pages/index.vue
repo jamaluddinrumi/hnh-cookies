@@ -3,7 +3,20 @@ const props = defineProps<{
   modelValue?: boolean;
 }>();
 
-const story = await useAsyncStoryblok("halaman-depan", { version: "draft" });
+const story = ref(null);
+const storyblokApi = useStoryblokApi();
+const { data } = await useAsyncData(
+  "vue",
+  async () =>
+    await storyblokApi.get(`cdn/stories/halaman-depan`, {
+      version: "draft",
+    })
+);
+story.value = data.value.data.story;
+
+onMounted(() => {
+  useStoryblokBridge(story.value.id, (evStory) => (story.value = evStory));
+});
 </script>
 
 <template>
