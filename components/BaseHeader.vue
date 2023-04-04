@@ -5,14 +5,14 @@ const props = defineProps<{
   modelValue?: boolean;
 }>();
 
-const appConfig = useAppConfig();
+const sitename = getConfig("sitename");
 </script>
 
 <template>
   <header class="navbar bg-base-100 container mx-auto px-4">
     <NuxtLink href="/" class="mx-auto">
       <span class="text-secondary text-xl normal-case calistoga">
-        HNH COOKIES
+        {{ sitename }}
       </span>
     </NuxtLink>
   </header>

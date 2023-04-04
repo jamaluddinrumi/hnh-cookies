@@ -13,6 +13,7 @@
     "@fontsource/inter": "^4.5.15",
     "@nuxtjs/critters": "^0.4.0",
     "@nuxtjs/tailwindcss": "^6.6.5",
+    "@storyblok/nuxt": "^5.3.4",
     "@tailwindcss/typography": "^0.5.9",
     "daisyui": "^2.50.0",
     "nuxt": "^3.3.2",

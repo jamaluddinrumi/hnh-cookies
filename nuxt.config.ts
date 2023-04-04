@@ -11,8 +11,20 @@ export default defineNuxtConfig({
   },
 
   modules: [
+    "@storyblok/nuxt",
     "@nuxtjs/tailwindcss",
     "nuxt-icon",
     "@nuxtjs/critters",
   ],
+
+  storyblok: {
+    accessToken: process.env.NUXT_STORYBLOK_TOKEN,
+    apiOptions: {
+      // timeout: 180,
+      cache: {
+        clear: "auto",
+        type: "memory",
+      },
+    },
+  },
 });

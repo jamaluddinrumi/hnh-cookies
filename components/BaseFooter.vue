@@ -4,6 +4,11 @@ import "~/assets/fonts/anaktoria/fonts.css";
 const props = defineProps<{
   modelValue?: boolean;
 }>();
+
+const sitename = getConfig("sitename");
+const slogan = getConfig("slogan");
+const bebas = getConfig("bebas");
+const igUrl = getConfig("igUrl");
 </script>
 
 <template>
@@ -13,14 +18,14 @@ const props = defineProps<{
     <div>
       <img src="/logo.png" class="max-w-[10rem]" />
       <p class="font-bold">
-        <span class="calistoga">HNH COOKIES</span> <br />
-        <span class="anaktoria"> DELICIOUS MADE BETTER </span>
+        <span class="calistoga">{{ sitename }}</span> <br />
+        <span class="anaktoria"> {{ slogan }} </span>
       </p>
-      <p>Since 2023</p>
+      <p>{{ bebas }}</p>
     </div>
     <div>
       <div class="grid grid-flow-col gap-4">
-        <a href="https://www.instagram.com/hnh_cookies/" target="_blank">
+        <a :href="igUrl" target="_blank">
           <Icon name="skill-icons:instagram" class="w-6 h-6" />
         </a>
       </div>
