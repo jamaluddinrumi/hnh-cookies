@@ -13,14 +13,13 @@
     "@fontsource/inter": "^4.5.15",
     "@nuxt/image-edge": "1.0.0-28008586.381b906",
     "@nuxtjs/critters": "^0.4.0",
-    "@nuxtjs/tailwindcss": "^6.6.5",
+    "@nuxtjs/tailwindcss": "^6.6.6",
+    "@storyblok/nuxt": "^5.4.2",
     "@tailwindcss/typography": "^0.5.9",
-    "daisyui": "^2.50.0",
-    "nuxt": "^3.3.2",
+    "daisyui": "^2.51.5",
+    "nuxt": "^3.4.2",
     "nuxt-icon": "^0.3.3",
-    "sass": "^1.53.0"
-  },
-  "dependencies": {
-    "@storyblok/nuxt": "^5.3.4"
+    "sass": "^1.62.0",
+    "vite": "^4.3.1"
   }
 }
