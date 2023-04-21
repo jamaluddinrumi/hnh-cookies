@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const props = defineProps<{
-  blok?: boolean;
+  blok?: Object;
 }>();
 
 const description = computed(() => renderRichText(props.blok.description));

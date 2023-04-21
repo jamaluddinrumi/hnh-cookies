@@ -3,8 +3,6 @@ const props = defineProps<{
   blok?: Object;
 }>();
 
-console.log(props.blok);
-
 const body = computed(() => renderRichText(props.blok.body));
 </script>
 
