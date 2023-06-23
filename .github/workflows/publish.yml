@@ -46,7 +46,7 @@ jobs:
         run: pnpm install
 
       - name: Generate
-        run: nuxt generate
+        run: pnpm generate
 
       - name: Publish to Cloudflare Pages
         uses: cloudflare/pages-action@v1
