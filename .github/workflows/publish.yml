@@ -47,6 +47,9 @@ jobs:
 
       - name: Generate
         run: pnpm generate
+        env:
+          NITRO_PRESET: cloudflare-pages
+          NUXT_STORYBLOK_TOKEN: ${{vars.NUXT_STORYBLOK_TOKEN}}
 
       - name: Publish to Cloudflare Pages
         uses: cloudflare/pages-action@v1
