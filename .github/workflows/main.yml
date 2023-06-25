@@ -1,4 +1,11 @@
-on: [push]
+on: 
+  push:
+
+  workflow_dispatch:
+
+  repository_dispatch:
+    types:
+      - build-on-storyblok-is-published
 
 jobs:
   publish:
@@ -45,8 +52,11 @@ jobs:
       - name: Install package dependencies
         run: pnpm install
 
-      - name: Build
-        run: pnpm build
+      - name: Generate
+        run: pnpm generate
+        env:
+          NITRO_PRESET: cloudflare-pages
+          NUXT_STORYBLOK_TOKEN: ${{vars.NUXT_STORYBLOK_TOKEN}}
 
       - name: Publish to Cloudflare Pages
         uses: cloudflare/pages-action@v1
@@ -54,7 +64,7 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           gitHubToken: ${{ secrets.GITHUB_TOKEN}}
-          projectName: noonastuff-v2
+          projectName: hnhcookies
           directory: dist
           branch: main
           wranglerVersion: '3'
