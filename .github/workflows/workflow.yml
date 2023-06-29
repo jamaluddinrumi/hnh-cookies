@@ -1,5 +1,5 @@
 on: 
-  push:
+  workflow_dispatch:
 
 concurrency:
   group: "cloudflare-pages"
@@ -56,8 +56,8 @@ jobs:
       - name: Build
         run: pnpm build
         env: 
-          NITRO_PRESET: cloudflare-pages
-          NUXT_STORYBLOK_TOKEN: ${{vars.NUXT_STORYBLOK_TOKEN}}
+          PUBLIC_STORYBLOK_TOKEN: ${{ vars.PUBLIC_STORYBLOK_TOKEN }}
+          VITE_STORYBLOK_TOKEN: ${{ vars.VITE_STORYBLOK_TOKEN }}
 
       - name: Publish to Cloudflare Pages
         uses: cloudflare/pages-action@v1
@@ -65,7 +65,7 @@ jobs:
             apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
             accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
             gitHubToken: ${{ secrets.GITHUB_TOKEN}}
-            projectName: hnhcookies
+            projectName: indomascot-astro
             directory: dist
-            branch: $GITHUB_REF_NAME
+            branch: main
             wranglerVersion: '3'
