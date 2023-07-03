@@ -56,8 +56,8 @@ jobs:
       - name: Build
         run: pnpm build
         env: 
-          PUBLIC_STORYBLOK_TOKEN: ${{ vars.PUBLIC_STORYBLOK_TOKEN }}
-          VITE_STORYBLOK_TOKEN: ${{ vars.VITE_STORYBLOK_TOKEN }}
+          NITRO_PRESET: cloudflare-pages
+          NUXT_STORYBLOK_TOKEN: ${{vars.NUXT_STORYBLOK_TOKEN}}
 
       - name: Publish to Cloudflare Pages
         uses: cloudflare/pages-action@v1
