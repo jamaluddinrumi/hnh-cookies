@@ -12,7 +12,7 @@
   "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss06', 'zero'",
 
   // Editor
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "editor.minimap.showSlider": "always",
   "editor.accessibilitySupport": "off",
   "editor.cursorSmoothCaretAnimation": "on",
